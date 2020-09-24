@@ -48,3 +48,49 @@ li{
     list-style: none;
     text-decoration: none;
 }
+
+/*Header*/
+
+header{
+    display: grid;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header_logo{
+    grid-area: logo;
+    height: 30px;
+    margin: 0 2rem;
+}
+
+.header_nav{
+    grid-area: navbar;
+    display: flex;
+}
+
+.header_nav_link{
+    padding: 1.9rem;  
+}
+
+.header_signup{
+    grid-area: button;
+    color: var(--main-blue);
+    font-weight: bold;
+    margin: 2rem;
+}
+
+/* Tablet & Desktop */
+
+@media screen and (min-width: 768px){
+
+    header{
+        grid-template-columns: auto 1fr auto auto;
+        grid-template-areas: "logo . navbar button";
+    }
+
+    .header_nav_link:hover{
+        color: var(--main-blue);
+        border-top: 3px solid var(--main-blue);     
+    }
+}
