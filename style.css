@@ -80,6 +80,31 @@ header{
     margin: 2rem;
 }
 
+/* mobile */
+
+@media screen and (max-width: 768px){
+
+    header{
+        width: 100%;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+        "logo . button"
+        "navbar navbar navbar";
+    }
+
+    .header_nav_link{
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid var(--bg-grey);
+    }
+
+    .header_nav_link:hover{
+        color: var(--main-blue);
+        border-bottom: 3px solid var(--main-blue);
+        transition-duration: 0.1s;     
+    }
+}
+
 /* Tablet & Desktop */
 
 @media screen and (min-width: 768px){
