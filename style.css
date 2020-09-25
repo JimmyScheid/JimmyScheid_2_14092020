@@ -119,3 +119,27 @@ header{
         border-top: 3px solid var(--main-blue);     
     }
 }
+
+/*Search Section*/
+
+.main{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem ;
+}
+
+/*Search Section*/
+
+/*Search_Header*/
+
+.search{
+    padding: 0;
+}
+
+.search_header_title{
+    margin-bottom: 0.5rem;
+}
+
+.search_header_subtitle{
+    margin-bottom: 1.5rem;
+}
