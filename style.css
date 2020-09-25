@@ -178,6 +178,68 @@ header{
     display: none;
 }
 
+/*Search_Filters*/
+
+.search_filters{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.search_filter_title{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 1rem 0;   
+}
+
+.search_filter_category{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid var(--bg-grey);
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 var(--blue-light);
+	transition: all ease 0.8s;
+}
+
+
+
+.search_filter_category_icon{
+    background-color: var(--blue-light);
+    display: flex;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    color: var(--main-blue);
+}
+
+.search_filter_category_title{
+    margin: 0 1rem;
+}
+
+/*Search_info*/
+
+.search_info{
+    display: flex; 
+    align-items: center;
+}
+
+.search_info_icon{
+    color: var(--main-blue);
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bg-grey);
+    margin-right: 1rem;
+}
 
 /* Tablet & Desktop */
 
@@ -187,4 +249,9 @@ header{
         font-size: 18px;
     }
 
+    .search_filter_category:hover{
+        box-shadow: inset 220px 0  var(--blue-light);
+        color: var(--main-blue);
+        border: 2px solid var(--blue-light);
+    }
 }
