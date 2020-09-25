@@ -241,6 +241,25 @@ header{
     margin-right: 1rem;
 }
 
+/*Search_info*/
+
+.search_info{
+    display: flex; 
+    align-items: center;
+}
+
+.search_info_icon{
+    color: var(--main-blue);
+    min-height: 2rem;
+    min-width: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--bg-grey);
+    margin-right: 1rem;
+}
+
 /* Tablet & Desktop */
 
 @media screen and (min-width: 768px){
