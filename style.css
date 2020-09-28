@@ -404,6 +404,44 @@ header{
     flex: 1;
 }
 
+/* Mobile */ 
+
+@media screen and (max-width:768px){
+    .hosting{
+        grid-template-columns: 1fr;
+       
+    }
+
+    .hosting_main{
+        order: 2;
+        background-color: white;
+        margin: 0;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .hosting_populary{
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+    .hosting{
+        grid-template-columns: 1fr;
+    }
+    .hosting_main{
+        grid-template-columns: repeat(2, 1fr);
+        order: 2;
+        background-color: white; 
+    }
+    .hosting_main_header{
+        grid-column: 1/ span 2;
+    }
+}
+
 /* Desktop */
 
 @media screen and (min-width: 992px){
