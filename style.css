@@ -370,6 +370,40 @@ header{
     font-weight: bold;
 }
 
+.hosting_populary{
+    display: grid;
+    row-gap: 2.5rem;
+    background-color: var(--bg-grey);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.hosting_populary_title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hosting_populary_card{
+    display: flex;
+}
+
+.hosting_populary_card_img{
+    height: 9rem;
+    object-fit: cover;
+    width: 33%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.hosting_populary_card_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.hosting_populary_card_space{
+    flex: 1;
+}
+
 /* Desktop */
 
 @media screen and (min-width: 992px){
