@@ -500,6 +500,32 @@ header{
     margin: 1rem;
 }
 
+/* Mobile */
+
+@media screen and (max-width: 768px){
+    .activity{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+        padding: 2rem;
+        margin: 0;
+    }
+    .activity_title{
+        grid-column: 1/2;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px){
+    .activity{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto 12rem 12rem 12rem;
+        margin: 2rem 0 4rem;
+    }
+    .activity_title{
+        grid-column: 1/3;
+    }
+}
 
 /* Desktop */
 
